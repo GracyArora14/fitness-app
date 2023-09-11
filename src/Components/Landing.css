@@ -1,0 +1,102 @@
+.landing-container {
+    background-image: url('../images/pic3.png');
+    background-size: cover;
+    background-position: bottom-center;
+    height: 100vh;
+    width: 100vw;
+    /* position: absolute;  */
+  }
+  
+  .landing-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust the alpha value for transparency */
+  }
+  .title{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 5rem;
+    color: #ffffff; /* Adjust the color as needed */
+    text-align: center;
+    /* margin-top: 100px;  */
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+  }
+  .text{
+    position: absolute;
+    top: 50%;
+    left: 4%; /* Adjust as needed for desired distance from the left edge */
+    transform: translate(0, -50%);
+    text-align: left; /* Set text alignment to left */
+    color: #fff; /* Adjust text color as needed */
+    font-family: 'EB Garamond', serif;
+    /* font-family: 'Ubuntu', sans-serif; */
+  }
+  
+  .text h1 {
+    font-size: 5rem;
+    margin-bottom: 4px; 
+    font-family: 'EB Garamond', serif;
+  }
+  
+   .typewriter {
+    font-size: 5rem;
+    color: blue;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  
+  } 
+  /* .typewriter::after{
+    content: '|';
+    position: absolute;
+    right: 0;
+    color: white;
+       opacity: 80%;  
+    
+    width: 100%;
+    animation: typing 3s steps(13) alternate infinite;
+
+  } 
+  @keyframes typing{
+    to{
+        width: 0%;
+    }
+  } 
+    @keyframes line{
+    50%{
+        color: transparent;
+    }
+  }   */
+  
+  .button-container{
+    display: flex;
+    align-items: center;
+    
+  }
+  .button {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    border: 3px solid #011427;
+    cursor: pointer;
+    border-radius: 35px;
+    background: linear-gradient(to right , transparent 50%,#0a3ea5 50%);
+    background-size: 200%;
+    background-position: left;  
+    transition: background-position 0.5s;
+}
+button:hover{
+    background-position: right;
+    color: #f3f0f0;
+}
+  
+  
