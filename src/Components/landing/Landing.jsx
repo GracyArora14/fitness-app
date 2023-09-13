@@ -1,5 +1,5 @@
 import React from 'react'
-import pic3 from '../../images/pic3.png'
+
 import "./Landing.css"
 import { useNavigate } from 'react-router-dom'
 
