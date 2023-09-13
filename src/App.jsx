@@ -1,12 +1,20 @@
 // import React from 'react';
-import Landing from './Components/Landing';
+import Landing from './Components/landing/Landing';
+import Login from './Components/login/login';
 import './index.css'
+import {Route,Link, Routes} from "react-router-dom";
+
 
 
 function App() {
   return (
     <div className='App' > 
-   <Landing/>
+   <Routes>
+    <Route path = "/" element = {<Landing/>}/>
+    <Route path = "/login" element = {<Login/>}/>
+    
+   </Routes>
+
     
     </div>
   );
